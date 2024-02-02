@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - `[ai]` keybinds in Visual mode now do it on their corresponding end of the selection
+- `g[jkeg]` keybinds in Visual mode now don't leave Visual mode
 
 ## [4.2.1] - 2024-01-06
 
