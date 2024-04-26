@@ -10,10 +10,25 @@ Changes keybinds in Neovim to use the Kakoune workflow
 
 ### [💤 lazy.nvim](https://github.com/folke/lazy.nvim)
 
+#### From [the Codeberg repo](https://codeberg.org/mirge/kak.nvim)
+
 ```lua
 {
   "kak.nvim",
   url = "https://codeberg.org/mirge/kak.nvim.git",
+  --version = "^5", -- if you don't want breaking changes
+  event = "VeryLazy", -- load after other plugins, to avoid conflicts
+  opts = {
+    -- your configuration here
+  },
+}
+```
+
+#### From [the GitHub repo](https://github.com/mirlge/kak.nvim) (shorter)
+
+```lua
+{
+  "mirlge/kak.nvim",
   --version = "^5", -- if you don't want breaking changes
   event = "VeryLazy", -- load after other plugins, to avoid conflicts
   opts = {
