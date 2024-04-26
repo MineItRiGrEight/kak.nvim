@@ -24,7 +24,7 @@ Changes keybinds in Neovim to use the Kakoune workflow
 }
 ```
 
-#### From [the GitHub repo](https://github.com/mirlge/kak.nvim) (shorter)
+#### From [the GitHub repo](https://github.com/mirlge/kak.nvim)
 
 ```lua
 {
