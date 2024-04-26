@@ -10,7 +10,7 @@ Changes keybinds in Neovim to use the Kakoune workflow
 
 ### [💤 lazy.nvim](https://github.com/folke/lazy.nvim)
 
-#### From [the Codeberg repo](https://codeberg.org/mirge/kak.nvim)
+#### From [the Codeberg repo](https://codeberg.org/mirge/kak.nvim) (recommended)
 
 ```lua
 {
