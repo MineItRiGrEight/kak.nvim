@@ -9,7 +9,6 @@ function M.setup(opts)
     local movement = { "h", "j", "k", "l" }
     local word = { "w", "e", "b" }
     local ft = { "f", "t" }
-    local around_inside = { "a", "i" }
 
     for _, key in ipairs(vim.list_extend(movement, word)) do
       local upper_key = string.upper(key)
@@ -44,22 +43,6 @@ function M.setup(opts)
         pre_key_str = "v",
       })
     end
-
-    for _, key in ipairs(around_inside) do
-      local key_wrapped = "<A-" .. key .. ">"
-      utils.keymap.set(key_wrapped, key, { post_first_str_extra_str = "v", countable = false, getcharstr = true })
-      utils.keymap.set(key_wrapped, key, {
-        mode = "x",
-        countable = false,
-        post_first_str_extra_str = utils.keycode("<Esc>") .. "v",
-        getcharstr = true,
-      })
-
-      local upper_key = string.upper(key)
-      vim.keymap.set("x", upper_key, "<Esc>" .. upper_key)
-    end
-    vim.keymap.set("x", "i", "<Esc>`<i")
-    vim.keymap.set("x", "a", "<Esc>`>a")
 
     for _, key in ipairs(ft) do
       utils.keymap.set(key, key, { pre_count = true, pre_key_str = "v", getcharstr = true })
