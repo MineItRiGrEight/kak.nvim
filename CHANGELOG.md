@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Testing script (`dev.sh`)
 
+### Removed
+
+- `[ai]` keybinds in Visual mode
+- `<A-i>` keybinds
+
 ## [5.0.0] - 2024-02-02
 
 ### Changed
