@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## Added
+### Added
 
 - `pkg.json` file (see [neovim/packspec](https://github.com/neovim/packspec) for info)
 
