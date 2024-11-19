@@ -1,0 +1,11 @@
+{
+	"name": "kak.nvim",
+	"description": "Select -> action. Kakoune workflow and most keybinds for Neovim.",
+	"engines": {
+		"nvim": ">=0.7.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://codeberg.org/mirge/kak.nvim"
+	}
+}
