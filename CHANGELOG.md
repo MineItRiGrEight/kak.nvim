@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `<A-[ai]>` keybinds
+- Option to rebind Visual mode `[aiAI]` keybinds to make them work like they do in Kakoune - see [README.md](./README.md) for details
 
 ## [6.1.0] - 2024-11-19
 
