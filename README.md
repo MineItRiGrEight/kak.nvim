@@ -50,8 +50,12 @@ require("kak").setup({
 
 ```lua
 {
-  full = true, -- if set to false, it disables all keybinds except Normal mode c, d, x, y
-}
+  full = true,     -- if set to false, it disables all keybinds except Normal mode c, d, x, y
+
+  experimental = { -- experimental features
+    rebind_visual_aiAI = false, -- if set to true, rebinds Visual mode `[aiAI]` keybinds to act like they do in Normal mode,
+  }                             -- except that `[ai]` goes to the corresponding end of the selection. however, this
+}                               -- makes it so you can only use the default keybinds with `<A-[ai]>`
 ```
 
 ## Usage
@@ -87,8 +91,8 @@ require("kak").setup({
 
 ## TODO
 
-- [ ] Readd `<A-[ai]>` keybinds
+- [X] Readd `<A-[ai]>` keybinds
   - [X] Readd only the `<A-[ai]>` keybinds
-  - [ ] Readd key rebind of Visual mode `[aiAI]` keybinds, but as experimental opt-in
+  - [X] Readd key rebind of Visual mode `[aiAI]` keybinds, but as experimental opt-in
 - [ ] (maybe) Add `G` keybinds (`g`, but extends selection), as experimental opt-in
   - [ ] Make all `g` keybinds leave Visual mode before executing them

@@ -103,9 +103,21 @@ function M.setup(opts)
 
     for _, key in ipairs({ "i", "a" }) do
       local wrapped_key = "<A-" .. key .. ">"
-      vim.keymap.set("n", wrapped_key, "v" .. key)
-      vim.keymap.set("x", wrapped_key, "<Esc>v" .. key)
+      local rhs = "v" .. key
+      local v_rhs = utils.keycode("<Esc>") .. rhs
+      vim.keymap.set("n", wrapped_key, rhs)
+      vim.keymap.set("x", wrapped_key, v_rhs)
+
+      if opts.experimental.rebind_visual_aiAI then
+        local keymap_opts = { count = false, getcharstr = true }
+        utils.keymap.set(wrapped_key, rhs, keymap_opts)
+        utils.keymap.set(wrapped_key, v_rhs, vim.tbl_extend("force", keymap_opts, { mode = "x" }))
+      end
     end
+  end
+  if opts.experimental.rebind_visual_aiAI then
+    vim.keymap.set("x", "i", "<Esc>`<i")
+    vim.keymap.set("x", "a", "<Esc>`>a")
   end
 
   for _, key in ipairs({ "d", "c", "y" }) do
