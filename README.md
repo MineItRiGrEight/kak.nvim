@@ -84,3 +84,11 @@ require("kak").setup({
 
 - `gg`: Go back to Normal mode first
 - `[ai]`: Append/insert (to Insert mode) on the corresponding end of the selection
+
+## TODO
+
+- [ ] Readd `<A-[ai]>` keybinds
+  - [ ] Readd only the `<A-[ai]>` keybinds
+  - [ ] Readd key rebind of Visual mode `[aiAI]` keybinds, but as experimental opt-in
+- [ ] (maybe) Add `G` keybinds (`g`, but extends selection), as experimental opt-in
+  - [ ] Make all `g` keybinds leave Visual mode before executing them
