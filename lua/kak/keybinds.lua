@@ -100,6 +100,12 @@ function M.setup(opts)
     })
     utils.keymap.set("R", "p", { mode = "x" })
     utils.keymap.set("R", "p", { post_first_str_extra_str = "v" })
+
+    for _, key in ipairs({ "i", "a" }) do
+      local wrapped_key = "<A-" .. key .. ">"
+      vim.keymap.set("n", wrapped_key, "v" .. key)
+      vim.keymap.set("x", wrapped_key, "<Esc>v" .. key)
+    end
   end
 
   for _, key in ipairs({ "d", "c", "y" }) do
