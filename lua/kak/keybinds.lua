@@ -112,6 +112,9 @@ function M.setup(opts)
         local keymap_opts = { count = false, getcharstr = true }
         utils.keymap.set(wrapped_key, rhs, keymap_opts)
         utils.keymap.set(wrapped_key, v_rhs, vim.tbl_extend("force", keymap_opts, { mode = "x" }))
+
+        local upper_key = string.upper(key)
+        vim.keymap.set("x", upper_key, "<Esc>" .. upper_key)
       end
     end
   end
