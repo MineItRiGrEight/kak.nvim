@@ -5,6 +5,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- WhichKey text objects integration (see [README](README.md) for details)
+
 ### Changed
 
 - Reuse Visual mode `<A-[ai]>` keybinds for Normal mode `<A-[ai]>` keybinds

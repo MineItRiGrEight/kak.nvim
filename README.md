@@ -37,6 +37,14 @@ Changes keybinds in Neovim to use the Kakoune workflow
 }
 ```
 
+#### [WhichKey](https://github.com/folke/which-key.nvim) integration
+
+Add this to the plugin spec:
+
+```lua
+dependencies = { "folke/which-key.nvim" },
+```
+
 ## Setup (if necessary)
 
 ```lua
@@ -51,6 +59,7 @@ require("kak").setup({
 ```lua
 {
   full = true,     -- if set to false, it disables all keybinds except Normal mode c, d, x, y
+  which_key_integration = true, -- which-key text objects integration
 
   experimental = { -- experimental features
     rebind_visual_aiAI = false, -- if set to true, rebinds Visual mode `[aiAI]` keybinds to act like they do in Normal mode,
