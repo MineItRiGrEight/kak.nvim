@@ -109,9 +109,8 @@ function M.setup(opts)
       vim.keymap.set("x", wrapped_key, v_rhs)
 
       if opts.experimental.rebind_visual_aiAI then
-        local keymap_opts = { count = false, getcharstr = true }
-        utils.keymap.set(wrapped_key, rhs, keymap_opts)
-        utils.keymap.set(wrapped_key, v_rhs, vim.tbl_extend("force", keymap_opts, { mode = "x" }))
+        utils.keymap.set(wrapped_key, v_rhs, { count = false, getcharstr = true, mode = "x" })
+        vim.keymap.set("n", wrapped_key, "v" .. wrapped_key)
 
         local upper_key = string.upper(key)
         vim.keymap.set("x", upper_key, "<Esc>" .. upper_key)
