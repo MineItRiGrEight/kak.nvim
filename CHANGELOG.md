@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Partial WhichKey integration for Normal mode `<A-[ai]>` keybinds
 
+### Fixed
+
+- The WhichKey integration being enabled without `full` option enabled - it's now disabled in that case
+
 ## [6.3.2] - 2025-01-17
 
 ### Fixed

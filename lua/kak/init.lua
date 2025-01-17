@@ -7,7 +7,7 @@ function M.setup(opts)
 
   require("kak.keybinds").setup(opts)
 
-  if package.loaded["which-key"] ~= nil then
+  if opts.full and package.loaded["which-key"] ~= nil then
     require("kak.which-key-integration")
   end
 end
