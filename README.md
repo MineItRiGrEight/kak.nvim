@@ -105,3 +105,12 @@ require("kak").setup({
   - [X] Readd key rebind of Visual mode `[aiAI]` keybinds, but as experimental opt-in
 - [ ] (maybe) Add `G` keybinds (`g`, but extends selection), as experimental opt-in
   - [ ] Make all `g` keybinds leave Visual mode before executing them
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+
+[GPL-3.0](https://choosealicense.com/licenses/gpl-3.0/)

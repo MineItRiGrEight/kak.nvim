@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Partial WhichKey integration for Normal mode `<A-[ai]>` keybinds
+- Contributing and license section in README.md
 
 ### Fixed
 
